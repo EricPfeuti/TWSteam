@@ -1,0 +1,131 @@
+body{
+    background: #0f0f0f;
+    height: 100vh;
+}
+
+.h1{
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+span{
+    color: rgb(193, 38, 38);
+}
+
+.container{
+    background: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-box{
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background: url(../images/Rafael.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.5s;
+    filter: grayscale(20%) opacity(19%);
+}
+.img-box:nth-child(2){
+    background: url(../images/Tagas.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(../images/Leonardo.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(../images/Eric.png);
+    background-size: cover;
+    background-position: center;
+}
+.img-box h3{
+    color: rgb(193, 38, 38);
+    position: absolute;
+    bottom: 0;
+    top: 20px;
+    left: 30px;
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+.img-box p{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+.img-box:hover{
+    width: 320px;
+    cursor: pointer;
+    filter: grayscale(0%) opacity(100%);
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+.img-box:hover p{
+    opacity: 1;
+    bottom: 25px;
+}
+
+.btn-time2{
+    display: none;
+}
+
+@media screen and (max-width:1020px){
+    .h1{
+        font-size: 1rem;
+        padding: 20px 4%;
+    }
+    .galeria{
+        flex-direction: column;
+    }
+    .container{
+        margin: 40px;
+    }
+    .img-box{
+        width: 100px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+        transition: 0.5s;
+        filter: grayscale(20%) opacity(19%);
+    }
+    .img-box:hover{
+        width: 250px;
+        cursor: pointer;
+        filter: grayscale(0%) opacity(100%);
+    }
+    .img-box h3{
+        font-size: 1rem;
+    }
+    .img-box p{
+        font-size: 0.9rem;
+    }
+    .btn-time{
+        text-align: center;
+    }
+
+}
