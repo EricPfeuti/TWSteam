@@ -7,5 +7,5 @@ Este site foi feito com a parceira de amigos, para mostrar nosso grupo em format
 - Responsível para celular;
 - Cards com imagens e descrição de cada pessoa;
 
-## Linguagens Utilizadas:
+## LINGUAGENS UTILIZADAS:
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
